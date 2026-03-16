@@ -1,0 +1,91 @@
+/* Configuração Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa a altura total da tela */
+}
+
+/* Container Principal */
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Inputs e Botões */
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Área do Resultado */
+#resultadoTabuada {
+    margin-top: 1.5rem;
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto; /* Adiciona scroll se a tabuada for muito longa */
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+#resultadoTabuada p {
+    padding: 5px 0;
+    border-bottom: 1px dashed #ddd;
+    color: #444;
+    font-family: 'Courier New', Courier, monospace; /* Estilo de calculadora */
+}
+
+#resultadoTabuada p:last-child {
+    border-bottom: none;
+}
